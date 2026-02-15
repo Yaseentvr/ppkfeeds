@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final stockData = Provider.of<StockProvider>(context);
     final brandNames = stockData.stockData.keys.toList();
-
+    
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(backgroundColor: PrimeColor, title: const Text('PPK FEEDS', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)), centerTitle: true),
